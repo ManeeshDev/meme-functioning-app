@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Meme Functioning App | Crush Alarm Fun Post❤😍</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="Meme Functioning App">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="./images/icons/favicon.png" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="./images/icons/mfa-150x150.png">
+  <meta name="theme-color" content="#39393a" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="MFA">
+  <meta name="msapplication-TileImage" content="./images/icons/mfa-144x144.png">
+  <meta name="msapplication-TileColor" content="#000">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="./css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./css/index.css" rel="stylesheet" />
+</head>
+
+<body style="height:100vh!important;">
+  <div class="site">
+    <main>
+      <div class="main">
+        <div class="content">
+          <div class="m-form" id="mFrom">
+            <div class="form">
+              <h2>Enter Your Details</h2>
+              <div class="client-form">
+                <div class="form-common">
+                  <input class="form-control" type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-common">
+                  <input class="form-control" type="number" id="age" placeholder="Enter your age" required>
+                </div>
+                <div class="form-common">
+                  <select class="form-control" id="gender" required>
+                    <option value="" selected="true" disabled="disabled">Select gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                  <span class="select-arrow"></span>
+                </div>
+                <hr>
+                <div class="crush-list" id="crushList"></div>
+                <div class="form-common d-flex justify-content-end">
+                  <button class="form-control add-crush" id="addCrush">🤍 Add Crush</button>
+                </div>
+                <div class="form-common d-flex justify-content-end">
+                  <button class="form-control btn btn--sleep" id="btnGoSleep"><b>Go to the Sleep 🥰😋</b></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content">
+          <img src="images/say01.png" alt="image" class="image" id="say01Img" />
+          <img src="images/say02.png" alt="image" class="image" id="say02Img" />
+          <img src="images/me.png" alt="image" class="image image-face imageShake" id="meImg" />
+          <img src="images/crush.png" alt="image" class="image image-face imageShake" id="crushImg" />
+          <img src="images/alarmPic.png" alt="image" class="image image-face alarmShake" id="alarmPicImg" />
+          <img src="images/post.jpg" alt="image" class="image image-face imageShake" id="postImg" />
+        </div>
+
+        <div class="content">
+          <div class="m-form" id="mFromBack">
+            <div class="form">
+              <div class="client-form">
+                <div class="form-common d-flex justify-content-center">
+                  <button class="form-control btn btn--back" id="btnReload" onClick="window.location.reload();"><b>Go Back 😒</b></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="copyright">
+          <p><a href="javascript:void(0)" id="info">info</a> |</p>
+          <p>Copyright &copy; 2020, &nbsp;&nbsp; All Right Reserved.</p>
+        </div>
+        <div class="contacts">
+          <a href="https://www.linkedin.com/in/maneeshprashanth/" target="blank">Linkedin</a>
+          <a href="https://github.com/ManeeshDev/" target="blank">GitHub</a>
+          <a href="https://twitter.com/maneeshprashan/" target="blank">Twitter</a>
+          <a href="https://www.facebook.com/maneeshprashanth/" target="blank">Facebook</a>
+          <a href="https://www.instagram.com/maneesh_prashanth/" target="blank">Instagram</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+</body>
+
+</html>

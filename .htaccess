@@ -1,0 +1,22 @@
+
+RewriteEngine On
+
+
+
+# Disabling Directory Browse 
+Options -Indexes
+
+
+
+# Protect the htaccess file
+<Files .htaccess>
+Order Allow,Deny
+Deny from all
+</Files>
+
+
+# protect your files by extension
+<Files ~ "details.txt">
+Order allow,deny
+Deny from all
+</Files>
