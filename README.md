@@ -1,4 +1,4 @@
-# This is a Meme Functioning Small App
+## 👨‍💻 This is a Meme Functioning Small App
 
 ### 📲 Progressive Web App
 
